@@ -4,7 +4,6 @@ export const NavbarWrapper = styled("div")`
   label: NavbarWrapper;
   background: #ffffff;
   position: relative;
-  font-family: "Oxygen", sans-serif;
   padding: 1.5rem 0;
 `;
 

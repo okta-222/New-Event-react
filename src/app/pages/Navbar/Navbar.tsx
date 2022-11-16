@@ -2,7 +2,6 @@ import { useState } from "react";
 import { links } from "./Links";
 import NavLinks from "./NavLinks";
 import {
-  Bar,
   EventTitle,
   NavbarWrapper,
   NavContainer,
@@ -20,26 +19,21 @@ export default function Nav() {
             <NavTitle>New</NavTitle>
             <EventTitle>Event</EventTitle>
           </div>
-          <NavItem className={`nav-items ${isOpen && "open"}`}>
-            <div>
-              {links.map((link, index) => {
-                return (
-                  <NavLinks
-                    navLink={link.navLink}
-                    navText={link.navText}
-                    key={index}
-                  />
-                );
-              })}
-            </div>
-          </NavItem>
-
+          <div>
+            {links.map((link, index) => {
+              return (
+                <NavLinks
+                  navLink={link.navLink}
+                  navText={link.navText}
+                  key={index}
+                />
+              );
+            })}
+          </div>
           <NavToggle
             className={`nav-toggle ${isOpen && "open"}`}
             onClick={() => setIsOpen(!isOpen)}
-          >
-            <Bar></Bar>
-          </NavToggle>
+          ></NavToggle>
         </NavContainer>
       </div>
     </NavbarWrapper>

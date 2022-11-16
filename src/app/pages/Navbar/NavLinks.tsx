@@ -1,9 +1,14 @@
-import { LinksWrapper } from "./Styles";
 import { NavLink } from "react-router-dom";
+import { LinksWrapper } from "./Styles";
 
-export default function NavLinks(navLink :any,navText :string) {
+type NavLinksProps = {
+  navLink: string;
+  navText: string;
+};
+export default function NavLinks({ navLink, navText }: NavLinksProps) {
   return (
     <LinksWrapper>
-    <NavLink to={navLink}>{navText}</NavLink>
+      <NavLink to={navLink}>{navText}</NavLink>
     </LinksWrapper>
-  )}
+  );
+}
