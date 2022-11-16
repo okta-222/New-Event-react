@@ -3,6 +3,7 @@ import { links } from "./Links";
 import NavLinks from "./NavLinks";
 import {
   EventTitle,
+  ItemsWrapper,
   NavbarWrapper,
   NavContainer,
   NavItem,
@@ -19,7 +20,7 @@ export default function Nav() {
             <NavTitle>New</NavTitle>
             <EventTitle>Event</EventTitle>
           </div>
-          <div>
+          <ItemsWrapper>
             {links.map((link, index) => {
               return (
                 <NavLinks
@@ -29,13 +30,13 @@ export default function Nav() {
                 />
               );
             })}
-          </div>
+          </ItemsWrapper>
           <NavToggle
             className={`nav-toggle ${isOpen && "open"}`}
             onClick={() => setIsOpen(!isOpen)}
           ></NavToggle>
         </NavContainer>
-      </div>
+      </div> 
     </NavbarWrapper>
   );
 }

@@ -2,9 +2,10 @@ import styled from "@emotion/styled";
 
 export const NavbarWrapper = styled("div")`
   label: NavbarWrapper;
-  background: #ffffff;
+  background: #000000;
   position: relative;
   padding: 1.5rem 0;
+  color: #ffffff;
 `;
 
 export const NavContainer = styled("div")`
@@ -25,13 +26,14 @@ export const EventTitle = styled("span")`
   label: EventTitle;
   font-weight: 700;
   font-size: 21px;
-  color: #000000;
+  color: #ffffff;
   cursor: pointer;
+  color: #f2545f;
 `;
 
 export const Title = styled("h2")`
   label: Title;
-  color: black;
+  color: #ffffff;
   font-size: 32px;
 `;
 
@@ -43,12 +45,12 @@ export const Span = styled("span")`
 
 export const LinkNav = styled("a")`
   label: LinkNav;
-  color: #000000;
+  color: #ffffff;
   font-size: 18px;
   font-weight: bold;
   text-decoration: none;
   position: relative;
-  background: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
   padding: 1rem;
   &:hover {
     opacity: 1;
@@ -99,7 +101,7 @@ export const NavItem = styled("div")`
     top: 60px;
     display: flex;
     flex-direction: column;
-    background: #ffffff;
+    background: #000000;
     left: 0;
     width: 100%;
     height: 90%;
@@ -147,5 +149,11 @@ export const Bar = styled("div")`
 `;
 export const LinksWrapper = styled("div")`
   label: LinksWrapper;
-  color: black;
+`;
+export const ItemsWrapper = styled("div")`
+  label: ItemsWrapper;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 `;

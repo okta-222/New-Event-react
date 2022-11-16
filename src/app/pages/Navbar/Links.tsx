@@ -1,4 +1,6 @@
-export const links = [
+export default function links() {
+
+ return [
   {
     navLink: "/",
     navText: "Intro",
@@ -32,4 +34,5 @@ export const links = [
     navText: "Contact",
   },
 ];
-export default links;
+}
+
