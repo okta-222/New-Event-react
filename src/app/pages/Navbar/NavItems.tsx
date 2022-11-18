@@ -10,7 +10,7 @@ export default function NavItems(): any {
   return items.map((link, index) => {
     return (
       <NavLinks
-        color={route.pathname === link.navLink ? theme.active : theme.gray}
+        color={route.pathname === link.navLink ? theme.active : theme.white}
         navLink={link.navLink}
         navText={link.navText}
         key={index}

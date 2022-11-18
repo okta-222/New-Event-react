@@ -1,11 +1,14 @@
 import styled from "@emotion/styled";
+import theme from "../config";
 
 export const NavbarWrapper = styled("div")`
   label: NavbarWrapper;
-  background: #000000;
+  background: ${theme.secondary};
   position: relative;
   padding: 1.5rem 0;
-  color: #ffffff;
+  color: ${theme.white};
+  position: fixed;
+  width: 100%;
 `;
 
 export const NavContainer = styled("div")`
