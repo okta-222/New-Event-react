@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import theme from "../config";
+
 export const AboutUsWrapper = styled("section")`
   label: AboutUsWrapper;
   padding: 3rem 0;

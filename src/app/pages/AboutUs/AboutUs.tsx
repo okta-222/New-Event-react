@@ -1,5 +1,6 @@
 import img from "../../../shared/assets/over.jpg";
 import { AboutUsWrapper, P, Span } from "./Styles";
+
 export default function AboutUs() {
   return (
     <div className="container">
